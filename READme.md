@@ -1,6 +1,29 @@
-# AI Market Research & Strategy Engine
+<div align="center">
 
-> An end-to-end AI-powered market research platform that automates research planning, web retrieval, evidence extraction, validation, citation generation, and strategy report creation using a multi-agent GenAI workflow.
+# Meridian - AI Market Research & Strategy Engine
+
+### An autonomous multi-agent system that turns a research brief into a fully cited, consulting-grade market report
+
+<br/>
+
+<img src="https://skillicons.dev/icons?i=react,vite,tailwind,fastapi,python,supabase,postgres,vercel&theme=dark" />
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/status-deployed-2e7d32?style=for-the-badge&labelColor=1a1a1a" />
+<img src="https://img.shields.io/badge/frontend-React_19_%2B_Vite-646cff?style=for-the-badge&labelColor=1a1a1a" />
+<img src="https://img.shields.io/badge/backend-FastAPI-009688?style=for-the-badge&labelColor=1a1a1a" />
+<img src="https://img.shields.io/badge/database-Supabase-3ecf8e?style=for-the-badge&labelColor=1a1a1a" />
+<img src="https://img.shields.io/badge/LLM-Gemini-4285f4?style=for-the-badge&labelColor=1a1a1a" />
+<img src="https://img.shields.io/badge/search-Tavily-f97316?style=for-the-badge&labelColor=1a1a1a" />
+
+</div>
+
+<br/>
+
+> A signed-in user submits a research brief. Seven specialized AI agents plan, search the live web, extract evidence, validate it, and write a polished report — every finding traceable back to its original source.
+
+<br/>
 
 ---
 
