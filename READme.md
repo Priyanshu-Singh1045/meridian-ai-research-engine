@@ -482,9 +482,8 @@ Add screenshots inside `docs/images/` and reference them here.
 
 | Service  | Status             |
 | -------- | ------------------ |
-| Backend  | Render             |
-| Frontend | Add Deployment URL |
-| Database | Supabase           |
+| Backend  | https://mckinsey-research-engine.onrender.com |
+| Frontend | https://meridian-frontend-mu.vercel.app/ |
 
 ---
 
