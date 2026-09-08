@@ -1,5 +1,11 @@
 <div align="center">
 
+<p align="center">
+  <img src="frontend/vite-project/public/Meridian Logo.png" alt="Meridian Logo" width="100">
+</p>
+
+<div align="center">
+
 # Meridian - AI Market Research & Strategy Engine
 
 ### An autonomous multi-agent system that turns a research brief into a fully cited, consulting-grade market report
@@ -24,6 +30,31 @@
 > A signed-in user submits a research brief. Seven specialized AI agents plan, search the live web, extract evidence, validate it, and write a polished report — every finding traceable back to its original source.
 
 <br/>
+
+# Table of Contents
+
+- [Project Overview](#project-overview)
+- [Business Problem](#business-problem)
+- [Product Goal](#product-goal)
+- [Key Features](#key-features)
+- [System Architecture](#system-architecture)
+- [The Multi-Agent Research Pipeline](#ai-workflow)
+- [Tech Stack](#technology-stack)
+- [Project Structure](#project-structure)
+- [Database Schema](#database-schema)
+- [API Endpoints](#api-endpoints)
+- [Reliability & Optimization](#reliability--optimizations)
+- [Evaluation & Testing](#evaluation--testing)
+- [Performance](#performance)
+- [Installation](#installation)
+- [Enviroment Variable](#environment-variables)
+- [Sample Research Query](#sample-research-query)
+- [Screenshots](#screenshots)
+- [Known Limitations](#known-limitations)
+- [Future Improvements](#future-improvements)
+- [Deployment](#deployment)
+- [Team Contributions](#team-contributions)
+- [Project Highlights](#project-highlights)
 
 ---
 
