@@ -473,19 +473,26 @@ Student placement rate and career outcomes at AlmaBetter compared to other edtec
 
 # Screenshots
 
-Add screenshots inside `docs/images/` and reference them here.
+<br/>
 
-### Home Page
+## Screenshots
 
-`docs/images/homepage.png`
+### Dashboard & Dark Mode
+A consulting-grade workspace with a navy-and-gold dark theme built for long research sessions.
 
-### Pipeline Progress
+<img src="meridian-Screenshots/Dashboard.png" alt="Meridian Dashboard and Dark Mode" width="700">
 
-`docs/images/pipeline.png`
+### Research Progress
+Seven specialized AI agents plan, search, extract, validate, cite, and report in real time.
 
-### Generated Report
+<img src="meridian-Screenshots/Loaded.png" alt="Meridian Research Progress" width="700">
 
-`docs/images/report.png`
+### Report View
+Every finding is backed by evidence, every claim is cited, and every source carries a transparent confidence score.
+
+<img src="meridian-Screenshots/Report_view.png" alt="Meridian Report View" width="700">
+
+<br/>
 
 ---
 
@@ -513,10 +520,30 @@ Add screenshots inside `docs/images/` and reference them here.
 
 | Service  | Status             |
 | -------- | ------------------ |
-| Backend  | https://mckinsey-research-engine.onrender.com |
+| Backend  | Render |
 | Frontend | https://meridian-frontend-mu.vercel.app/ |
+| Database | Supabase |
 
 ---
+<br/>
+
+## Team Contributions
+
+<div align="center">
+
+| Member | Role |
+|---|---|
+| *Aryan Roy* (GR) | Frontend & UX/UI |
+| *Deepak Chauhan* | Auth & API communication |
+| *Vikram Kumar R.* | Backend & API Layer |
+| *Prajwal Girade* | AI agents 1-3 (Planning Agent, Research Agent, Extraction Agent) |
+| *Priyanshu Singh* | AI agents 4-5 (Validation Agent, Citation Agent) |
+| *Aditya Tyagi* | AI agents 6-7 (Report Agent, Linker Agent) |
+| *Shashank Meshram* | Database & Persistence |
+
+</div>
+
+<br/>
 
 # Project Highlights
 
@@ -527,17 +554,7 @@ Add screenshots inside `docs/images/` and reference them here.
 * Production-style backend and database integration.
 * Retry, fallback, batching, and validation for reliability.
 
----
 
-## Applied GenAI Project Submission
-
-* GitHub Repository
-* Live Working Demo
-* Demo Video
-* Architecture Documentation
-* AI Workflow Documentation
-* Backend APIs
-* Database Integration
 * Evaluation & Reliability
 
 ---
