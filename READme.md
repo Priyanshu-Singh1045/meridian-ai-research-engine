@@ -146,6 +146,59 @@ Final Strategy Report + Database Storage
 | Report Linker    | Links findings to evidence |
 | Supabase         | Stores research data       |
 
+The project is split into two independently deployed halves that communicate over a REST API secured with Supabase Auth.
+
+```mermaid
+flowchart TB
+    classDef client fill:#DCEBFB,stroke:#185FA5,stroke-width:1.5px,color:#042C53,font-weight:bold
+    classDef backend fill:#CFF0E3,stroke:#0F6E56,stroke-width:1.5px,color:#04342C,font-weight:bold
+    classDef pipeline fill:#F3EFE6,stroke:#8a8578,stroke-width:1.5px,color:#2C2C2A,font-weight:bold
+    classDef external fill:#F0EAFB,stroke:#534AB7,stroke-width:1.5px,color:#26215C,font-weight:bold
+    classDef grp fill:transparent,stroke:#999,stroke-dasharray:3 3,color:#666
+
+    subgraph CLIENT["Client — React + Vite"]
+        direction LR
+        A["Login / Signup"] --> B["Dashboard"] --> C["Research progress"] --> D["Report view<br/>Report · Evidence · Sources"]
+    end
+
+    subgraph API["Backend — FastAPI"]
+        direction LR
+        AUTH["Auth check<br/>Supabase JWT"] --> ROUTES["/api/research · /reports<br/>/evidence · /feedback"]
+    end
+
+    subgraph PIPELINE["AI pipeline — 7 sequential agents"]
+        direction LR
+        P1["1 · Planner"] --> P2["2 · Research"] --> P3["3 · Extraction"] --> P4["4 · Validation"] --> P5["5 · Citations"] --> P6["6 · Report"] --> P7["7 · Linker"]
+    end
+
+    subgraph EXT["External services"]
+        direction LR
+        LLM["Gemini LLM"]
+        SEARCH["Tavily search"]
+        DB["Supabase<br/>Postgres + pgvector"]
+    end
+
+    D -- "HTTPS + bearer token" --> AUTH
+    ROUTES --> P1
+    P2 <--> SEARCH
+    P1 & P3 & P4 & P6 <--> LLM
+    ROUTES <--> DB
+
+    class A,B,C,D client
+    class AUTH,ROUTES backend
+    class P1,P2,P3,P4,P5,P6,P7 pipeline
+    class LLM,SEARCH,DB external
+    class CLIENT,API,PIPELINE,EXT grp
+```
+
+| Layer | Responsibility |
+|---|---|
+| *Frontend* | React 19 SPA (Vite) — authentication, brief submission, an animated progress screen, and a tabbed report viewer. |
+| *Backend* | FastAPI service — enforces authentication, orchestrates the AI pipeline per request, and persists every intermediate artifact so any stage of a job can be queried later. |
+| *Database* | Supabase (managed Postgres) — structured relational storage, plus a pgvector-backed memory_records table for future semantic recall. |
+
+<br/>
+
 ---
 
 # AI Workflow
@@ -473,7 +526,11 @@ Student placement rate and career outcomes at AlmaBetter compared to other edtec
 
 <br/>
 
-## Screenshots
+### Sign in Page
+A secure and seamless authentication portal for accessing the research workspace.
+
+<img src="meridian-Screenshots/sign-in_page.png" alt="Meridian Sign in Page" width="700">
+
 
 ### Dashboard & Dark Mode
 A consulting-grade workspace with a navy-and-gold dark theme built for long research sessions.
