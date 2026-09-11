@@ -51,7 +51,6 @@
 - [Known Limitations](#known-limitations)
 - [Future Improvements](#future-improvements)
 - [Deployment](#deployment)
-- [Team Contributions](#team-contributions)
 - [Project Highlights](#project-highlights)
 
 ---
@@ -582,23 +581,6 @@ Every finding is backed by evidence, every claim is cited, and every source carr
 ---
 <br/>
 
-## Team Contributions
-
-<div align="center">
-
-| Member | Role |
-|---|---|
-| *Aryan Roy* (GR) | Frontend & UX/UI |
-| *Deepak Chauhan* | Auth & API communication |
-| *Vikram Kumar R.* | Backend & API Layer |
-| *Prajwal Girade* | AI agents 1-3 (Planning Agent, Research Agent, Extraction Agent) |
-| *Priyanshu Singh* | AI agents 4-5 (Validation Agent, Citation Agent) |
-| *Aditya Tyagi* | AI agents 6-7 (Report Agent, Linker Agent) |
-| *Shashank Meshram* | Database & Persistence |
-
-</div>
-
-<br/>
 
 # Project Highlights
 
